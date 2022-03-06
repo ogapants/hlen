@@ -1,14 +1,23 @@
 {
   "name": "hlen",
   "version": "0.0.2",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "force hl=en",
   "icons": {
     "128": "icon.png"
   },
-  "browser_action":{
+  "content_scripts": [
+    {
+      "matches": [
+        "https://developer.android.com/*"
+      ],
+      "js": [
+        "script.js"
+      ]
+    }
+  ],
+  "action":{
     "default_icon": "icon.png",
-    "default_title":"hlen",
     "default_popup":"popup.html"
   }
 }
