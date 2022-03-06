@@ -1,4 +1,4 @@
-# Add hl=en or hl=ja to any URL (AHL)
+# force hl=en
 
 ![icon](icon.png)
 

@@ -1,14 +1,14 @@
 {
-  "name": "AHL",
-  "version": "0.0.1",
+  "name": "hlen",
+  "version": "0.0.2",
   "manifest_version": 2,
-  "description": "Add hl=en or hl=ja to any URL.",
+  "description": "force hl=en",
   "icons": {
     "128": "icon.png"
   },
   "browser_action":{
     "default_icon": "icon.png",
-    "default_title":"hl=...",
+    "default_title":"hlen",
     "default_popup":"popup.html"
   }
 }
