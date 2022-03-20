@@ -19,13 +19,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       forceEn();
       break;
     case "clickedPopup"://from popup.js
-      //Notify background.js
-      chrome.runtime.sendMessage({
-        type: request.type,
-        data: request.data
-      });
-      break;
-    case "directly"://from background.js
       directly(request.data);
       break;
     default:
@@ -35,6 +28,4 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 //Notify background.js
-chrome.runtime.sendMessage({
-  type: "onLoad"
-});
+chrome.runtime.sendMessage("onLoad");
